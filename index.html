@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+   <div class="crud">
+    <div class="head">
+        <h1>crud</h1>
+        <h5>creat read update delete</h5>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="title" id="title">
+
+        <div class="money">
+            <input type="number" id="price" placeholder="price">
+            <input type="number" id="tax" placeholder="tax">
+            <input type="number" id="ads"  placeholder="ads">
+            <input type="number" id="discount"  placeholder="discount">
+            <small id="total"></small>
+        </div>
+
+        <input type="number" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+
+        <button class="CreatBtn">Creat</button>
+    </div>
+
+    <div class="output">
+        <div class="searchBox">
+            <input type="text" placeholder="search by title" id="search">
+            <div class="searchBtns">
+                <button class="sTitle">search by Title</button>
+                <button class="sCategory">search by category</button>
+            </div>
+        </div>
+
+        <div id="deleteAll" onclick="deleteAll()"><button> delete all </button></div>
+        <table>
+            <tr>
+                <th>#Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxis</th>
+                <th>ads</th>
+                <th>disc</th>
+                <th>Total</th>
+                <th>category</th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </div>
+    
+   </div>
+</body>
+</html>
